@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      bjb HC News Preview
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item class="margin-item" *ngFor="let item of news" (click)="itemSelected(item)" >
+      <ion-thumbnail item-start>
+        <img src="../../assets/imgs/logo.png">
+      </ion-thumbnail>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2 class="title">
+              <b>{{item.news_title}}</b>
+            </h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="summary">{{item.news_summary}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </button>
+  </ion-list>
+</ion-content>
+

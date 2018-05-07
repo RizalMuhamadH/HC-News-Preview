@@ -15,7 +15,7 @@ export class NetworkProvider {
 
   url: string;
   constructor(public http: Http) {
-    this.url = '';
+    this.url = 'http://mobs.ayobandung.com/';
   }
 
   getAllNews(id: string){
